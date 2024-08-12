@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 60px;
+    box-shadow: 0 1px 3px -2px #555;
+    margin-bottom: 1px;
+    background: white; 
+}
+
+.nav-logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.profile-logo {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px) {
+   .navbar {
+    padding: 12px 30px;
+   }
+
+   .nav-logo {
+    width: 64px;
+    height: 64px;
+}
+
+   .profile-logo {
+    width: 54px;
+    height: 54px;
+}
+
+}

@@ -1,0 +1,278 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+ 
+.nav-logo {
+    display: flex; 
+    align-items: center;
+}
+
+
+
+.nav-logo p {
+    font-size: 32px;
+    color: #F5C006;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+
+.ecom-logo {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+}
+
+
+.list-items li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.list-items hr {
+    border: none;
+    width: 80%;
+    height: 2px;
+    border-radius: 12px;
+    background: red;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.logo-cart {
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav-login-cart button{
+    width: 120px;
+    border-radius: 45px;
+    height: 58px;
+    outline: none;
+    font-size: 20px;
+    color: rgb(177, 144, 71); 
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #F5C006;
+}
+
+.nav-login-cart button:active {
+    background: #F5C006;
+}
+
+.nav-cart-count {
+     width: 22px;
+     height: 22px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: -35px;
+     margin-left: -55px;
+     border-radius: 11px;
+     font-size: 12px;
+     background: red;
+     color: white;
+}
+
+.dropDownMenu {
+    display: none;
+}
+
+@media(max-width: 1280px){
+    .navbar {
+        padding: 12px 50px;
+    }
+
+    .nav-logo img{
+        width: 40px;
+    }
+
+    .nav-logo p {
+        font-size: 24px;
+    }
+    
+    .list-items li {
+        font-size: 17px;
+
+    }
+
+    .nav-login-cart {
+        gap: 28px;
+    }
+
+    .nav-login-cart button {
+        width: 120px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .nav-cart-count {
+        margin-left: -40px;
+        font-size: 14px;
+        width: 19px;
+        width: 19px;
+    }
+
+    .ecom-logo {
+        width: 53px;
+        height: 53px;
+    }
+
+    .logo-cart {
+        width: 37px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar{
+       padding: 12px 10px;
+    }
+     
+    .nav-logo {
+        font-size: 16px;
+    }
+
+    .nav-login-cart button {
+        width: 85px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .nav-cart-count {
+       font-size: 12px;
+       width: 20px;
+       height: 19px;
+       margin-left: -33px;
+    }
+
+    .logo-cart {
+        width: 33px;
+    }
+
+    .list-items {
+        gap: 31px;
+    }
+
+    .ecom-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 800px) {
+    .dropDownMenu {
+        height: 36px;
+        width: 36px;
+        margin-top: 9px;
+        cursor: pointer;
+        display: block; 
+        rotate: -180deg;
+        background: linear-gradient(180deg, #F5C006, #e7b071 60%);
+        border-radius: 53px;
+        transition: 0.6s; 
+    }
+     
+    .dropDownMenu.open {
+        transform: rotate(180deg);
+        
+    }
+
+    
+    .list-items {
+        display: none;
+        height: 69px;
+        width: 100%;
+        position: absolute;  
+        background: linear-gradient(180deg, #F5C006, #e7b071 60%);
+        justify-content: center;
+        top: 70px;
+    }
+
+    .nav-menu-visible {
+        display: flex;
+    }
+
+    .ecom-logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .logo-cart {
+        width: 29px;
+        margin-bottom: -25%;
+        margin-right: -5px;
+        margin-top: -10px;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+    .navbar {
+        padding: 10px 0px;
+    }
+
+    .list-items {
+        top: 60px;
+    }
+
+    .ecom-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-cart {
+        width: 29px;
+        margin-bottom: -29%;
+        margin-right: -4px;
+        margin-top: -4px;
+        font-size: 9px;
+        display: flex;
+        margin: -3px;
+    }
+
+    .nav-login-cart button {
+        width: 79px;
+        height: 40px;
+    }
+
+    .nav-cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        margin-right: -9px;
+        margin-top: -18px;
+    }
+
+    .dropDownMenu{
+        height: 30px;
+        width: 30px;
+    }
+}
